@@ -3,15 +3,13 @@ import { Info, Repos, User, Search, Navbar } from "../components";
 import loadingImage from "../images/preloader.gif";
 import { GithubContext } from "../context/context";
 const Dashboard = () => {
-  const first = useContext(GithubContext);
-  console.log(first);
   return (
     <main>
-      <Navbar></Navbar>
-      <Search></Search>
+      {/* <Navbar></Navbar>
+      <Search></Search> */}
       <Info></Info>
       <User></User>
-      <Repos></Repos>
+      {/* <Repos></Repos> */}
     </main>
   );
 };

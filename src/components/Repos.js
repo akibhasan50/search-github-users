@@ -1,9 +1,29 @@
-import React from 'react';
-import styled from 'styled-components';
-import { GithubContext } from '../context/context';
-import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from './Charts';
+import React from "react";
+import styled from "styled-components";
+import { GithubContext } from "../context/context";
+import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 const Repos = () => {
-  return <h2>repos component</h2>;
+  const chartData = [
+    {
+      label: "HTML",
+      value: "22",
+    },
+    {
+      label: "CSS",
+      value: "23",
+    },
+    {
+      label: "JS",
+      value: "80",
+    },
+  ];
+  return (
+    <section className="sectiton">
+      <Wrapper className="section-center">
+        <ExampleChart data={chartData}></ExampleChart>
+      </Wrapper>
+    </section>
+  );
 };
 
 const Wrapper = styled.div`
